@@ -7,3 +7,4 @@
 # Create a GitHub repository for your website.
 # Codex commits and pushes your work to GitHub, and GitHub Pages publishes it to a live URL.
 # Live Website URL: https://rs2767-code.github.io/
+# Instructions on how to view the website locally: First, clone the repository. Then, navigate to the project directory. Lastly, open index.html in a web browser.
