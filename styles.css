@@ -41,6 +41,13 @@ h1 { max-width: 850px; margin: 0 0 1.5rem; font-size: clamp(3.25rem, 8vw, 6.3rem
 .project-card h2 { margin: 0 0 1rem; font-size: 1.35rem; }
 .project-card > p:not(.card-number):not(.tag) { color: var(--muted); }
 .tag { display: inline-block; margin: .75rem 0 0; padding: .3rem .55rem; border-radius: 3px; background: var(--soft-accent); color: var(--accent-strong); font-size: .74rem; font-weight: 700; }
+.project-gallery { margin-top: 4rem; }
+.project-gallery h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.project-image-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.project-image-grid figure, .project-card-image { overflow: hidden; margin: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); }
+.project-image-grid img, .project-card-image img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; }
+.project-image-grid figcaption, .project-card-image figcaption { padding: .8rem 1rem; color: var(--muted); font-size: .9rem; }
+.project-card-image { margin-top: 1.5rem; }
 .skill-list { max-width: 800px; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .skill-list li { display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem .5rem; border-bottom: 1px solid var(--line); }
 .skill-mark { color: var(--accent); font: 700 .85rem 'Manrope', sans-serif; }
@@ -63,6 +70,7 @@ h1 { max-width: 850px; margin: 0 0 1.5rem; font-size: clamp(3.25rem, 8vw, 6.3rem
   .primary-nav a { padding: .7rem .35rem; }
   .theme-toggle { padding: .5rem .65rem; font-size: .75rem; }
   .project-grid { grid-template-columns: 1fr; }
+  .project-image-grid { grid-template-columns: 1fr; }
   .project-card { min-height: auto; }
   .card-number { margin-bottom: 1.25rem; }
 }
