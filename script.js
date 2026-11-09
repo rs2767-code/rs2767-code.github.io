@@ -29,7 +29,7 @@ function setTheme(theme) {
 }
 
 const savedTheme = localStorage.getItem('portfolio-theme');
-setTheme(savedTheme === 'dark' ? 'dark' : 'light');
+setTheme(savedTheme === 'light' ? 'light' : 'dark');
 if (themeButton) {
   themeButton.addEventListener('click', () => {
     const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
